@@ -34,7 +34,7 @@ public class Calculator implements ActionListener {
         textField.setFont(myFont);
         textField.setEditable(false);   //user cannot input into textField - we only want to output
 
-        /*instantiate buttons*/
+        /*instantiate BUTTONS*/
         addButton = new JButton("+");
         subtractButton = new JButton("-");
         multButton = new JButton("*");
@@ -71,6 +71,13 @@ public class Calculator implements ActionListener {
         deleteButton.setBounds(50,430,145,50);
         clearButton.setBounds(205,430,145,50);
 
+        /*PANEL*/
+        panel = new JPanel();
+        panel.setBounds(50,100,300,300);
+        panel.setLayout(new GridLayout(4,4,10,10));
+        panel.setBackground(Color.GRAY);
+
+        frame.add(panel);   //add panel
         frame.add(deleteButton);    //add delete button
         frame.add(clearButton);     //add clear button
         frame.add(textField);   //add textField to frame
