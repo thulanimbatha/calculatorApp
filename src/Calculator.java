@@ -26,6 +26,7 @@ public class Calculator implements ActionListener {
         frame = new JFrame("Calculator");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(420,550);
+        frame.setResizable(false);  //we do not want the window resized
         frame.setLayout(null);
 
         /*Instantiate textField*/
